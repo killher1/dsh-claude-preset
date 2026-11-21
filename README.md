@@ -24,7 +24,7 @@
 ### 方式一：从 GitHub 克隆后本地安装（推荐）
 
 ```bash
-git clone https://github.com/<your-username>/dsh-claude-preset.git
+git clone https://github.com/killher1/dsh-claude-preset.git
 dsh plugin --profile web add ./dsh-claude-preset
 ```
 
@@ -90,7 +90,7 @@ Same model, same prompt ("Pelican on a Bicycle" interactive webpage):
 #### Option 1: Install from GitHub Clone
 
 ```bash
-git clone https://github.com/<your-username>/dsh-claude-preset.git
+git clone https://github.com/killher1/dsh-claude-preset.git
 dsh plugin --profile web add ./dsh-claude-preset
 ```
 

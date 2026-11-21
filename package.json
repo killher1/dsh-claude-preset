@@ -10,6 +10,14 @@
     "preset"
   ],
   "license": "MIT",
+  "homepage": "https://github.com/killher1/dsh-claude-preset#readme",
+  "bugs": {
+    "url": "https://github.com/killher1/dsh-claude-preset/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/killher1/dsh-claude-preset.git"
+  },
   "type": "module",
   "exports": {
     ".": "./index.js",
