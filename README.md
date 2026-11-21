@@ -95,7 +95,6 @@ Same model, same prompt ("Pelican on a Bicycle" interactive webpage):
 
 Open DeepSeek Harness → **Plugins** → **+ Add Plugin**, enter `dsh-claude-preset`, and click **Install** (you can also enter the GitHub repository URL or a local directory path):
 
-![Add dsh-claude-preset in DSH](assets/1.png)
 
 #### Option 2: Install from GitHub Clone
 
