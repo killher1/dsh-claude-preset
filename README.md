@@ -21,7 +21,13 @@
 
 ## 下载与安装使用
 
-### 方式一：从 GitHub 克隆后本地安装（推荐）
+### 方式一：在 DSH 官方插件界面直接添加（推荐）
+
+打开 DeepSeek Harness → 左侧 **「插件」** → 右上角 **「+ 添加插件」**，在输入框中填写 `dsh-claude-preset`，点击 **「安装」** 即可（也支持直接填写 GitHub 仓库地址或本地目录路径）：
+
+![在 DSH 中添加 dsh-claude-preset 插件](assets/1.png)
+
+### 方式二：从 GitHub 克隆后本地安装
 
 ```bash
 git clone https://github.com/killher1/dsh-claude-preset.git
@@ -34,7 +40,7 @@ Windows PowerShell 可直接传入本地绝对路径：
 dsh plugin --profile web add D:\path\to\dsh-claude-preset
 ```
 
-### 方式二：通过 npm 安装（若已发布到 npm）
+### 方式三：通过 CLI 从 npm 安装
 
 ```bash
 dsh plugin --profile web add dsh-claude-preset
@@ -87,7 +93,13 @@ Same model, same prompt ("Pelican on a Bicycle" interactive webpage):
 
 ### Installation & Usage
 
-#### Option 1: Install from GitHub Clone
+#### Option 1: Install in DSH Plugin UI (Recommended)
+
+Open DeepSeek Harness → **Plugins** → **+ Add Plugin**, enter `dsh-claude-preset`, and click **Install** (you can also enter the GitHub repository URL or a local directory path):
+
+![Add dsh-claude-preset in DSH](assets/1.png)
+
+#### Option 2: Install from GitHub Clone
 
 ```bash
 git clone https://github.com/killher1/dsh-claude-preset.git
@@ -100,7 +112,7 @@ On Windows PowerShell, pass the local checkout path:
 dsh plugin --profile web add D:\path\to\dsh-claude-preset
 ```
 
-#### Option 2: Install from npm (if published)
+#### Option 3: Install via CLI from npm
 
 ```bash
 dsh plugin --profile web add dsh-claude-preset
