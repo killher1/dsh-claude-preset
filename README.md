@@ -23,9 +23,7 @@
 
 ### 方式一：在 DSH 官方插件界面直接添加（推荐）
 
-打开 DeepSeek Harness → 左侧 **「插件」** → 右上角 **「+ 添加插件」**，在输入框中填写 `dsh-claude-preset`，点击 **「安装」** 即可（也支持直接填写 GitHub 仓库地址或本地目录路径）：
-
-![在 DSH 中添加 dsh-claude-preset 插件](assets/1.png)
+打开 DeepSeek Harness → 左侧 **「插件」** → 右上角 **「+ 添加插件」**，在输入框中填写 `dsh-claude-preset`，点击 **「安装」** 即可（也可以直接填写本仓库地址）：
 
 ### 方式二：从 GitHub 克隆后本地安装
 
