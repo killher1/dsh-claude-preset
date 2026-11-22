@@ -1,6 +1,6 @@
 {
   "meta": {
     "title": "Claude Code preset",
-    "description": "Adds an agent preset whose system prompt is Claude Code's own prompt text: identity, harness rules, doing tasks, code style, action safety, delivering and finishing work, communication, reporting outcomes, corrections, git, untrusted input, tool usage, and style. DeepSeek Harness tool plugins keep contributing their own tool mechanics, so tool calling, sandboxing, compaction, delegation, and the runtime context are unchanged. Pick it from the agent preset roster when starting a session."
+    "description": "Adds an agent preset adapting Claude Code's behavioral system prompt, 13 core tool descriptions, Plan Mode planning structure, and 9-section context compaction for DeepSeek Harness, while keeping native tool execution, sandboxing, delegation, and runtime context intact. Pick it from the agent preset roster when starting a session."
   }
 }

@@ -1,10 +1,12 @@
 # Claude Code agent preset: one `@deepseek-ai/dsh-agent-preset` declaration
 # inserted after the web patch.
 #
-# The plugin list follows the shipped `standard` preset, so tool calling and
-# every other DeepSeek Harness capability stay exactly as they are. Only the
-# prompt-contributing row changes: `claude-code-prompt` replaces `persona` and
-# supplies Claude Code's own system prompt text instead of a one-line persona.
+# The plugin list follows the shipped `standard` preset so tool execution,
+# sandboxing, delegation, and runtime context stay as they are, while adapting:
+# - `claude-code-prompt`: replaces `harness:identity` / `persona` and shadows
+#   13 core tool descriptions in each bound agent's child scope (`agent.ctx`)
+# - `plan-mode`: uses Claude Code's structured planning guidance
+# - `compaction-claude-code`: uses Claude Code's 9-section compaction prompt
 - insert:
     - id: preset-claude-code
       name: '@deepseek-ai/dsh-agent-preset'
@@ -43,8 +45,7 @@
           - id: skill-filesystem
             name: '@deepseek-ai/dsh-skill-filesystem'
             config:
-              customSkillDirs:
-                - !!js process.getBuiltinModule('node:path').join(process.getBuiltinModule('node:path').dirname(process.getBuiltinModule('node:module').createRequire(baseUrl).resolve('@deepseek-ai/dsh-agent-preset/package.json')), 'skills')
+              customSkillDirs: !!js "(() => { try { const path = process.getBuiltinModule('node:path'); const mod = process.getBuiltinModule('node:module'); return [path.join(path.dirname(mod.createRequire(baseUrl).resolve('@deepseek-ai/dsh-agent-preset/package.json')), 'skills')]; } catch { return []; } })()"
           - id: tool-skill
             name: '@deepseek-ai/dsh-tool-skill'
           - id: command-goal
